@@ -1,36 +1,26 @@
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
-        MyArraysListInteger.list.add(0, 1);
-        MyArraysListInteger.list.add(1, 2);
-        MyArraysListInteger.list.add(2, 3);
-        MyArraysListInteger.list.add(3, 4);
-        MyArraysListInteger.list.add(4, 5);
-        MyArraysListInteger.list.add(5, 6);
-        MyArraysListInteger.list.add(6, 7);
-        MyArraysListInteger.list.add(7, 8);
-        MyArraysListInteger.list.add(8, 9);
-        MyArraysListInteger.list.add(9, 0);
+        List<Integer> myArrayList = new ArrayList<>();
+        myArrayList.add(new Integer(1));
+        myArrayList.add(new Integer(2));
+        myArrayList.add(new Integer(3));
+        myArrayList.add(new Integer(4));
+        myArrayList.add(new Integer(7));
+        myArrayList.add(new Integer(6));
+        myArrayList.add(new Integer(5));
 
-        System.out.println("Массив");
+        System.out.println(myArrayList);
 
-        System.out.println(MyArraysListInteger.list);
-
-        MyArraysListInteger.getSize(MyArraysListInteger.list);
-
-        MyArraysListInteger.get(MyArraysListInteger.list, 1);
-
-        MyArraysListInteger.set(MyArraysListInteger.list, 0, 0);
-
-        MyArraysListInteger.delete(MyArraysListInteger.list, 5);
-
-        MyArraysListInteger.sort(MyArraysListInteger.list);
-
-        MyArraysListInteger.toArray(MyArraysListInteger.list);
-
-        MyArraysListInteger.equals(MyArraysListInteger.list, 0, 8);
-
-        MyArraysListInteger.iterator(MyArraysListInteger.list, 2);
-
-        System.out.println(MyArraysListInteger.list);
+        Integer.getSize(myArrayList);
+        Integer.get(myArrayList, 3);
+        Integer.set(myArrayList, 1, 0);
+        Integer.delete(myArrayList, 6);
+        Integer.sort(myArrayList);
+        Integer.toArray(myArrayList);
+        Integer.equals(myArrayList, 0, 5);
+        Integer.iterator(myArrayList);
     }
+
 }
